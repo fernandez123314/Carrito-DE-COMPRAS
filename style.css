@@ -1,0 +1,445 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  animation: color-change 5s infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes color-change {
+  0% {
+    color: #ff0000; 
+  }
+  25% {
+    color: #00ff00; 
+  }
+  50% {
+    color: #0000ff; 
+  }
+  75% {
+    color: #ff00ff; 
+  }
+  100% {
+    color: #ffff00; 
+  }
+}
+
+h1:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h1::before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: #ff0000; 
+  margin: 0 auto;
+  margin-top: 10px;
+  animation: slide-in 1s;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin-top: 10px;
+  opacity: 0.5;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  animation: color-change 5s infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes color-change {
+  0% {
+    color: #ff6699; 
+  }
+  25% {
+    color: #66ccff; 
+  }
+  50% {
+    color: #ffcc66; 
+  }
+  75% {
+    color: #99ff99; 
+  }
+  100% {
+    color: #ff99cc; 
+  }
+}
+
+h2:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h2::before {
+  content: '';
+  display: block;
+  width: 70%;
+  height: 3px;
+  background-color: #ff6699; 
+  margin: 0 auto;
+  margin-top: 10px;
+  animation: slide-in 1s;
+}
+
+@keyframes slide-in {
+   0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #000;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+.carritoh2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #ff0000; 
+  animation: color-change 2s infinite;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes color-change {
+  0% {
+    color: #ff0000; 
+    background-color: #00ffff; 
+  }
+  50% {
+    color: #00ff00; 
+    background-color: #ffff00; 
+  }
+  100% {
+    color: #0000ff; 
+    background-color: #ff00ff; 
+  }
+}
+
+.carritoh2:hover {
+  animation-play-state: paused; 
+}
+
+.carritoh2::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: slide-in 1s 1s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.carritoh2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  opacity: 0.5;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+.totalh2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333;
+  position: relative;
+}
+
+.totalh2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #ff4d4d;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.totalh2:hover::before {
+  transform: scaleX(1);
+}
+
+.totalh2 span {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.totalh2:hover span {
+  background-color: #ff1a1a;
+}
+
+
+
+
+/* Estilos para la sección de productos */
+#productos {
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+#productos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#productos li {
+  margin: 10px;
+}
+
+#productos button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#productos button:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* Estilos para el contenedor del carrito */
+#carrito {
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+  border: 2px solid #ddd; 
+  padding: 20px; 
+  border-radius: 5px; 
+}
+
+/* Estilos para los elementos del carrito */
+#carrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#carrito li {
+  margin: 10px;
+  flex: 0 0 200px; 
+}
+
+/* Estilos para el botón de comprar */
+#carrito button:first-child {
+  background-color: #f9c91e;
+}
+
+#carrito button:first-child:hover {
+  background-color: #ccaa1e;
+}
+
+/* Estilos para el botón de borrar productos */
+#carrito button:last-child {
+  background-color: #ff5e5e;
+}
+
+#carrito button:last-child:hover {
+  background-color: #cc3b3b;
+}
+
+/* Estilos para los precios en el carrito */
+#carrito ul li {
+  position: relative;
+}
+
+#carrito ul li::before {
+  content: "$";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Estilos para el total a pagar */
+#total {
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+  position: relative;
+}
+
+#total h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+  animation: color-change 5s infinite;
+}
+
+#monto-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#monto {
+  font-size: 36px;
+  color: #32cd32;
+  animation: pulse 1s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #f9f9f9;
+  }
+  50% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #f9f9f9;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

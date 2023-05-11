@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 2 JS ADHEMAR - FERNANDEZ</title>
+    <Script src="carrito.js"></Script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Carrito de compras</h1>
+	<div id="productos">
+		<h2>Productos disponibles:</h2>
+		<ul>
+			<li><button onclick="agregarProducto('harina', 35)">Harina - $35</button></li>
+			<li><button onclick="agregarProducto('pan', 25)">Pan - $25</button></li>
+			<li><button onclick="agregarProducto('papa', 52)">Papa - $52</button></li>
+			<li><button onclick="agregarProducto('palta', 55)">Palta - $55</button></li>
+			<li><button onclick="agregarProducto('fideos', 85)">Fideos - $85</button></li>
+			<li><button onclick="agregarProducto('aceite', 350)">Aceite - $350</button></li>
+			<li><button onclick="agregarProducto('sopa', 86)">Sopa - $86</button></li>
+			<li><button onclick="agregarProducto('mermelada', 108)">Mermelada - $108</button></li>
+			<li><button onclick="agregarProducto('porotos', 69)">Porotos - $69</button></li>
+			<li><button onclick="agregarProducto('lentejas', 85)">Lentejas - $85</button></li>
+			<li><button onclick="agregarProducto('mandarina', 43)">Mandarina - $43</button></li>
+			<li><button onclick="agregarProducto('banana', 79)">Banana - $79</button></li>
+			<li><button onclick="agregarProducto('leche de almendras', 145)">Leche de almendras - $145</button></li>
+			<li><button onclick="agregarProducto('papel higiénico', 147)">Papel higiénico - $147</button></li>
+			<li><button onclick="agregarProducto('lavandina', 55)">Lavandina - $55</button></li>
+			<li><button onclick="agregarProducto('alcohol en gel', 123)">Alcohol en gel - $123</button></li>
+			<li><button onclick="agregarProducto('shampoo', 400)">Shampoo - $400</button></li>
+			<li><button onclick="agregarProducto('arroz', 66)">Arroz - $66</button></li>
+			<li><button onclick="agregarProducto('salsa de tomate', 35)">Salsa de tomate - $35</button></li>
+            <li><button onclick="agregarProducto('pimenton', 25)">Pimenton - $25</button></li>
+		</ul>
+	</div>
+	<div id="carrito">
+		<h2 class="carritoh2">Carrito de compras:</h2>
+		<ul></ul>
+		<button onclick="comprar()">Comprar</button>
+		<button onclick="borrar()">Borrar productos</button>
+	  </div>
+	  
+	  <div id="total">
+		<h2 class="totalh2">Total a pagar:</h2>
+		<p id="monto">0</p>
+	  </div>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
